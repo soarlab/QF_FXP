@@ -2,7 +2,7 @@
 (set-logic QF_FXP)
 (set-info :category "crafted")
 (set-info :source |Alberto Griggio <griggio@fbk.eu>. These benchmarks were used for the evaluation in the following paper: L. Haller, A. Griggio, M. Brain, D. Kroening: Deciding floating-point logic with systematic abstraction. FMCAD 2012. Real-numbered literals have been automatically translated by MathSAT|)
-(set-info :status unsat)
+(set-info :status unknown)
 ;; MathSAT API call trace ;; generated on 05/20/15 17:24:54 
 (declare-fun |c::main::1::IN!0@1#0| () (_ SFXP 32 16))
 (define-fun _t_3 () RoundingMode RNE)
@@ -11,7 +11,7 @@
 (define-fun _t_11 () (_ SFXP 32 16) (sfxp.mul Saturated roundTowardPositive _t_9 _t_10))
 (define-fun _t_13 () (_ SFXP 32 16) (sfxp #x00060000 16))
 (define-fun _t_14 () (_ SFXP 32 16) (sfxp.div Saturated roundTowardPositive _t_11 _t_13))
-(define-fun _t_15 () (_ SFXP 32 16) (sfxp.neg _t_14))
+(define-fun _t_15 () (_ SFXP 32 16) (sfxp.neg Saturated _t_14))
 (define-fun _t_16 () (_ SFXP 32 16) (sfxp.add Saturated _t_9 _t_15))
 (define-fun _t_17 () (_ SFXP 32 16) (sfxp.mul Saturated roundTowardPositive _t_9 _t_11))
 (define-fun _t_18 () (_ SFXP 32 16) (sfxp.mul Saturated roundTowardPositive _t_9 _t_17))

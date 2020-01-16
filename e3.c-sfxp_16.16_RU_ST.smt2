@@ -2,7 +2,7 @@
 (set-logic QF_FXP)
 (set-info :category "crafted")
 (set-info :source |Alberto Griggio <griggio@fbk.eu>. These benchmarks were used for the evaluation in the following paper: L. Haller, A. Griggio, M. Brain, D. Kroening: Deciding floating-point logic with systematic abstraction. FMCAD 2012. Real-numbered literals have been automatically translated by MathSAT|)
-(set-info :status unsat)
+(set-info :status unknown)
 ;; MathSAT API call trace ;; generated on 05/20/15 17:24:51 
 (declare-fun b13 () (_ SFXP 32 16))
 (declare-fun b25 () (_ SFXP 32 16))
@@ -33,7 +33,7 @@
 (define-fun _t_23 () Bool (sfxp.lt _t_22 _t_19))
 (define-fun _t_24 () Bool (not _t_23))
 (define-fun _t_25 () (_ SFXP 32 16) b14)
-(define-fun _t_26 () (_ SFXP 32 16) (sfxp.neg _t_25))
+(define-fun _t_26 () (_ SFXP 32 16) (sfxp.neg Saturated _t_25))
 (define-fun _t_27 () (_ SFXP 32 16) (sfxp.add Saturated _t_17 _t_26))
 (define-fun _t_28 () Bool (sfxp.lt _t_27 _t_21))
 (define-fun _t_29 () Bool (not _t_28))
