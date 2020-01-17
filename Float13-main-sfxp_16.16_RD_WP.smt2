@@ -2,7 +2,7 @@
 (set-logic QF_FXP)
 (set-info :source |ESBMC floating-point test cases contributed by Mikhail Ramalho.|)
 (set-info :category "crafted")
-(set-info :status unsat)
+(set-info :status sat)
 (declare-fun |c::plus_infinity&0#1| () (_ SFXP 32 16))
 (declare-fun |c::minus_infinity&0#1| () (_ SFXP 32 16))
 (declare-fun |c::NaN&0#1| () (_ SFXP 32 16))
