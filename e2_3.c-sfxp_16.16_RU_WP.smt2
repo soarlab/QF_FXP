@@ -15,7 +15,7 @@
 (declare-fun b29 () (_ SFXP 32 16))
 (declare-fun b11 () (_ SFXP 32 16))
 (declare-fun b13 () (_ SFXP 32 16))
-(define-fun _t_3 () RoundingMode RNE)
+(define-fun _t_3 () RoundingMode roundTowardPositive)
 (define-fun _t_9 () (_ SFXP 32 16) b13)
 (define-fun _t_10 () (_ SFXP 32 16) b9)
 (define-fun _t_11 () (_ SFXP 32 16) (sfxp.add Wrapping _t_9 _t_10))
