@@ -24,6 +24,6 @@
 (assert (= __ieee754_acos_~z~1_0 (sfxp.mul saturation roundDown __ieee754_acos_~x_0 __ieee754_acos_~x_0)))
 (assert (= __ieee754_acos_~p~1_0 (sfxp.mul saturation roundDown __ieee754_acos_~z~1_0 (sfxp.add saturation ~pS0_-1 (sfxp.mul saturation roundDown __ieee754_acos_~z~1_0 (sfxp.add saturation ~pS1_-1 (sfxp.mul saturation roundDown __ieee754_acos_~z~1_0 (sfxp.add saturation ~pS2_-1 (sfxp.mul saturation roundDown __ieee754_acos_~z~1_0 (sfxp.add saturation ~pS3_-1 (sfxp.mul saturation roundDown __ieee754_acos_~z~1_0 (sfxp.add saturation ~pS4_-1 (sfxp.mul saturation roundDown __ieee754_acos_~z~1_0 ~pS5_-1)))))))))))))
 (assert (= __ieee754_acos_~q~1_0 (sfxp.add saturation ~one_-1 (sfxp.mul saturation roundDown __ieee754_acos_~z~1_0 (sfxp.add saturation ~qS1_-1 (sfxp.mul saturation roundDown __ieee754_acos_~z~1_0 (sfxp.add saturation ~qS2_-1 (sfxp.mul saturation roundDown __ieee754_acos_~z~1_0 (sfxp.add saturation ~qS3_-1 (sfxp.mul saturation roundDown __ieee754_acos_~z~1_0 ~qS4_-1))))))))))
-(assert (= __ieee754_acos_~q~1_0 (sfxp #x00000000 16)))
+(assert (= __ieee754_acos_~q~1_0 ((_ sfxp 16) #x00000000)))
 (check-sat)
 (exit)
