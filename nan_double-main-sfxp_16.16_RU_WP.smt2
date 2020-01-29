@@ -1,5 +1,5 @@
 (set-info :smt-lib-version 2.6)
-(set-logic QF_BV)
+(set-logic QF_FXP)
 (set-info :source |ESBMC floating-point test cases contributed by Mikhail Ramalho.|)
 (set-info :category "crafted")
 (set-info :status sat)
